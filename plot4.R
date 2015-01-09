@@ -18,11 +18,9 @@ power2[,9] <- as.numeric (power2[,9]) ## set as numeric the variable Sub Meterin
 png(file = "plot4.png", width=480, height=480)##Open png device and set the dimension of the pic. Graph results better when I did it directly in png
 par(mfrow=c(2,2)) ## say that the window is going to be split in 2 rows and 2 cols
 
-<<<<<<< HEAD
 plot(power2$datetime, power2$Global_active_power, type="l", xlab= NA, ylab="Global Active Power")
-=======
-plot(power2$datetime, power2$Global_active_power, type="l", xlab= NA, ylab="Global Active Power (kilowatts)")
->>>>>>> d70d41fc1a268797201e42fb459def15e4fcad36
+
+plot(power2$datetime, power2$Global_active_power, type="l", xlab= NA, ylab="Global Active Power")
 
 plot(power2$datetime, power2$Voltage, type="l", xlab= "datetime", ylab="Voltage")
 
